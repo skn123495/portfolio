@@ -3,8 +3,8 @@ import {Grid,Cell} from 'react-mdl';
 class LandingPage extends Component {
     render() {
         return (
-            <div style={{width:'100%',margin:'auto'}}>
-                   <Grid className="landing-grid">
+            <div style={{width:'100%',margin:'auto',overflow:'scroll'}}>
+                <Grid className="landing-grid">
                     <Cell col={12}>
                         <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
                         alt="image" className="avatar-img"/>
@@ -34,7 +34,6 @@ class LandingPage extends Component {
                                 <i className="fa fa-youtube-square" aria-hidden="true"></i>
                             </a>
                         </div>
-
                     </div>
                 </Grid>
             </div>
