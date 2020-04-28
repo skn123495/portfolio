@@ -9,7 +9,7 @@ class Resume extends Component {
         return (
             <div>
                 <Grid>
-                    <Cell col={4}>
+                    <Cell col={4} tablet={6}> phone={4}>>
                         <div style={{textAlign:'center'}}>
                             <img
                             src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
@@ -37,7 +37,7 @@ class Resume extends Component {
                         </div>
                         <hr style={{borderTop:'3px solid #833fb2',width:'50%'}} />
                     </Cell>
-                    <Cell className="resume-right-col" col={8}>
+                    <Cell className="resume-right-col" col={8} tablet={6}> phone={2}>
                         <h2>Education</h2>
                         <Education
                             startYear={2011}
@@ -127,6 +127,38 @@ class Resume extends Component {
                             
                     </Cell>
                 </Grid>
+
+                <div style={{width: '80%', margin: 'auto'}}>
+    <Grid className="demo-grid-ruler">
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+        <Cell col={1}>1</Cell>
+    </Grid>
+    <Grid className="demo-grid-1">
+        <Cell col={4}>4</Cell>
+        <Cell col={4}>4</Cell>
+        <Cell col={4}>4</Cell>
+    </Grid>
+    <Grid className="demo-grid-2">
+        <Cell col={6}>6</Cell>
+        <Cell col={4}>4</Cell>
+        <Cell col={2}>2</Cell>
+    </Grid>
+    <Grid className="demo-grid-3">
+        <Cell col={6} tablet={8}>6 (8 tablet)</Cell>
+        <Cell col={4} tablet={6}>4 (6 tablet)</Cell>
+        <Cell col={2} phone={4}>2 (4 phone)</Cell>
+    </Grid>
+</div>
             </div>
 
         )
